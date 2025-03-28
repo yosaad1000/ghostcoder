@@ -15,11 +15,27 @@ This script allows users to interact with the **Ollama** AI model using custom g
 ## 📥 Installation
 
 ### Prerequisites:
-Ensure you have Python installed (version 3.10 or later recommended). Install required dependencies using:
+1. **Download and Install Ollama:**
+   - Visit [Ollama's official download page](https://ollama.com/download) and install it for your platform.
+   - Ensure Ollama is running by executing the following command in the terminal:
+     ```sh
+     ollama serve
+     ```
 
-```sh
-pip install -r requirements.txt
-```
+2. **Install the required Ollama model:**
+   - Run this command to download and set up the `codellama` model (or any other model of your choice):
+     ```sh
+     ollama run codellama
+     ```
+
+3. **Modify the script to match your AI model and role:**
+   - Open the script file and change the `OLLAMA_MODEL` variable to your preferred model name.
+   - Modify the `role` inside `chat_messages` to set your desired AI behavior.
+
+4. **Install required dependencies using:**
+   ```sh
+   pip install -r requirements.txt
+   ```
 
 ### Required Libraries:
 - `keyboard` → Detects and binds hotkeys.
@@ -35,7 +51,7 @@ pip install -r requirements.txt
 
 1. **Run the script**
    ```sh
-   python autocode.py
+   python script.py
    ```
 
 2. **Hotkeys Available:**
@@ -101,4 +117,3 @@ This project is open-source and available under the **MIT License**.
 ---
 
 🚀 **Happy Coding!**
-
