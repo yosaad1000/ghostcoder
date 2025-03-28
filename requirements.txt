@@ -1,0 +1,9 @@
+keyboard
+pyperclip
+pyautogui
+ollama
+random
+time
+threading
+sys
+re
