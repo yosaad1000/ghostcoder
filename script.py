@@ -31,10 +31,10 @@ def beep():
         print(f"⚠️ Error playing beep sound: {e}")
 
 
-def extract_code_block(text):
-    """Extract the first code block from the response."""
-    match = re.search(r"```(?:\w+)?\n(.*?)```", text, re.DOTALL)
-    return match.group(1).strip() if match else ""
+# def extract_code_block(text):
+#     """Extract the first code block from the response."""
+#     match = re.search(r"```(?:\w+)?\n(.*?)```", text, re.DOTALL)
+#     return match.group(1).strip() if match else ""
 
 
 def get_highlighted_text():
@@ -80,8 +80,8 @@ def ask_ollama():
         print("\n💬 Ollama's Full Response:\n" + full_response)
 
         # 🔍 Extract only the code block
-        response_text = extract_code_block(full_response)
-
+        # response_text = extract_code_block(full_response)
+        response_text = full_response
         if response_text:
             print("\n📝 Extracted Code:\n" + response_text)
         else:

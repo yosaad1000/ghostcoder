@@ -25,7 +25,7 @@ This script allows users to interact with the **Ollama** AI model using custom g
 2. **Install the required Ollama model:**
    - Run this command to download and set up the `codellama` model (or any other model of your choice):
      ```sh
-     ollama run codellama
+     ollama run mistral
      ```
 
 3. **Modify the script to match your AI model and role:**
@@ -68,34 +68,6 @@ This script allows users to interact with the **Ollama** AI model using custom g
 
 ---
 
-## 🔥 Example Output
-
-### **Query:**
-> `bubble sort in C++`
-
-### **AI Response (Typed Output):**
-```cpp
-#include <iostream>
-using namespace std;
-
-void bubbleSort(int arr[], int n) {
-    for (int i = 0; i < n-1; i++) {
-        bool swapped = false;
-        for (int j = 0; j < n-i-1; j++) {
-            if (arr[j] > arr[j+1]) {
-                swap(arr[j], arr[j+1]);
-                swapped = true;
-            }
-        }
-        if (!swapped) {
-            break;
-        }
-    }
-}
-```
-
----
-
 ## 🛑 Troubleshooting
 - **Hotkeys not working?** Ensure the script is running in the background.
 - **AI not responding?** Check your internet connection and that **Ollama** is properly installed.
@@ -116,4 +88,4 @@ This project is open-source and available under the **MIT License**.
 
 ---
 
-🚀 **Happy Coding!**
+🚀 **Happy Writing!**
